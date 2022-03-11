@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/bricks_bg.jpg)
+  background: url(images/stars_bg.jpg)
 		center center fixed no-repeat;
 	background-size: cover;
   
@@ -72,25 +72,26 @@ html, body {
     width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(44, 2, 68, 0.60); /*this uses opacity of 60% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	/* removed -- border: 4px dashed white; */
 }
 
    
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin-bottom: -100px;
+	margin-top: 12px;
+	/* removed -- border: 3px dashed red; */
 	text-align: center;
 }
 
 h1 {
-	font-family: kepler-std,serif;
-	font-weight: 400;
+	font-family: puffin-arcade-yoko,sans-serif;
+	font-weight: 800;
 	font-style: normal;
-	font-size: 2em;
+	font-size: 3.5em;
     margin: 0px auto 10px auto;
-    color: #fff;
+    color: rgb(240, 206, 250);
 }
 
 h2 {
@@ -99,31 +100,60 @@ h2 {
 	font-style: normal;
 	font-size: 1.5em;
     line-height: 1.4;
-    color: #fff;
+    color: rgb(199, 115, 255);
     padding: 0px 0px;
     margin: 0px auto 25px auto;
-}
+} 
 
 p {
-	font-family: kepler-std,serif;
-	font-weight: 400;
-	font-style: normal;		;
-	font-size: 1.2em;
+	font-family: puffin-arcade-yoko,sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 2em;
     line-height: 1.6;
-    color: #fff;
+    color: rgb(240, 206, 250);
 }
 
 nav{
-	font-family: kepler-std,serif;
-	font-size: 1.2em;
-	width: 0 auto;
-	border: dashed turquoise;
+	font-family: puffin-arcade-chrome,sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	/* removed -- border: dashed turquoise;
 	border-width: 3px 0;
+	*/
+	font-size: 2em;
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
-nav li{
+nav ul {
+	list-style:none;
+	text-align: center;
+		letter-spacing: 2px;
+		}
+nav ul li {
+	display: inline-block;
+		}
+
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #b067be;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 10px;
+			}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition:all 0.5s;
+}
+nav ul li a:hover {
+	color: rgb(255, 255, 255);
+}
+
+/* replaced -- nav li{
 	display:inline;
 }
 
@@ -133,14 +163,15 @@ nav a{
 }
 
 a{
-	color:#444;
+	color:rgb(229, 167, 248);
 	text-decoration: none;
 	font-weight: bold;
 }
+*/
 
 a:hover{
-	color:black;
-	background:pink;
+	color:rgb(252, 252, 252);
+	background:rgba(253, 253, 253, 0.363);
 }
 
 
