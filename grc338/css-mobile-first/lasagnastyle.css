@@ -15,6 +15,7 @@ h1{
     font-family: Sutro, serif;  
     font-weight: 700;  
     font-style: normal;
+    font-size: 2em;
 }
 
 h2{
@@ -25,13 +26,14 @@ h2{
     font-family: Sutro, serif;  
     font-weight: 300;  
     font-style: normal;
+    font-size: 1.5em;
 }
 
 figcaption{
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: italic;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em 1.5em 1em;
 }
 
 h3{
@@ -48,12 +50,12 @@ ul{
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
-    padding: 0em 1em 1em 2em;
+    padding: 0em 1em 1.5em 2em;
 }
 
 .ingredients{
     li{
-        margin: 0em 0em 0.7em 0em;
+        margin: 0em 0em 1em 0em;
         list-style-type:disc;
     }    
 }
@@ -62,7 +64,7 @@ ol{
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
-    padding: 0em 1em 1em 2em;
+    padding: 0em 1em 1.5em 2em;
 }
 .directions{
     li{
@@ -78,7 +80,7 @@ footer{
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
-    padding: 1em 1em 1em 2em;
+    padding: 1em 1em 2em 2em;
 
 }
 
