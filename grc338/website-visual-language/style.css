@@ -1,0 +1,225 @@
+
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(images/home-background.jpg) center center fixed;
+	background-size: cover;
+	position: relative; 
+	min-height: 100vh;
+}
+
+div.container { 
+	position: absolute;
+	min-height: 100vh;
+
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+body {  
+    font-family: sans-serif;  
+}  
+
+
+main { 
+	padding: 1em 2em 2em 2em;
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: rgb(255, 255, 255);
+	padding: 1em 0.5em 0em 0.5em;
+	padding-left: 2em;
+	}
+
+h1 {
+	width: 100%;
+	}
+
+h2, h3, h4 {
+		font-weight: bold;
+		font-family:garamond;
+	}
+
+h4 {
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 1em 0em 0.5em 0em;
+	color:rgb(218, 53, 47)
+	}
+	
+h3 {
+	font-size: 1.5em;
+	margin: 1em 0em 0.5em 0em;
+}
+
+
+a {
+	text-decoration: none;
+	}
+
+nav ul  {
+	text-align: right;
+	}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 2em;
+}
+
+main.menu ul {
+		margin: 1.5em 0em;
+}	
+
+main.menu ul li {
+		margin: 0em 0em 0em 0em;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+}	
+
+p {
+	margin: 0em 0em 1em 0em;
+	font-family:garamond;
+	font-size: 1em;
+	}
+	
+p.description {
+	grid-column: 1/3;
+	margin: 0em 0em 2em 0em;
+	}
+	
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color:rgb(218, 53, 47);
+	text-align: right;
+	margin: 0em;
+	}
+	
+nav ul li {
+	font-family: garamond;
+	/*font-family: sans-serif; added by me */
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 2em;
+	}
+	
+nav ul li a {
+	color: rgb(0, 0, 0);
+	/*background-color: rgb(103, 103, 103);*/
+	padding: 0.3em;
+	}
+	
+nav ul li.selected a{
+	color:rgb(218, 53, 47);
+	padding: 0.3em;
+	}
+
+p.slogan {
+	font-size: 3em;
+	font-family: garamond;
+	margin: 1.5em 0em 3em 0em;
+	color: rgb(250 250 250);	
+	}
+
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 2em 0em 0em 2em;
+}
+
+address {
+	color: rgb(0, 0, 0);
+	margin-top: 0.5em;
+	font-family: garamond;
+	}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (min-width: 60em) {
+	body {  
+		font-family: sans-serif;  
+		/*background-color: rgb(158, 158, 158);*/
+		/*margin: 0em 3em 0em 3em;*/
+	
+	}  
+	header {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		background: rgb(255, 255, 255);
+		padding: 2em 0.5em 0em 2em;
+		}
+	nav ul li {
+		font-weight: bold;
+		display:inline;
+		font-size: 1.75em;
+		}
+	nav ul li a {
+		color: rgb(0, 0, 0);
+		/*background-color: rgb(118, 118, 118);*/
+	
+		}
+	h1 {
+		width: 20%;
+		padding: 0em 0.5em 2em 0.5em;
+		}
+	div.container { 
+		position: relative;
+		min-height: 100vh;
+		background-color: rgb(255, 255, 255);
+		margin: auto;
+	}
+	
+	main.menu ul {
+		margin: 1.5em 0em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3em;
+	}	
+
+	article{
+		margin: 1em 0em 3em 0em;
+		text-align:left;
+		
+	}
+
+	article.about ul {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		column-span: all;
+		column-gap: 1em;
+	}
+	
+	img {
+		width: 100%; /*Please leave this line.*/
+		 display: block;
+	}
+
+	img.logo {
+		width: 150%;
+		display:block;
+	}
+}
