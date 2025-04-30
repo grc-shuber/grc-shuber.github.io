@@ -44,6 +44,7 @@ nav ul li{
     font-family: sans-serif;
     list-style-type: none;
     font-weight: bold;
+    display:list-item;
     font-size: 1.25em;
     padding: 0.25em;
     padding-left: 0.7em;
