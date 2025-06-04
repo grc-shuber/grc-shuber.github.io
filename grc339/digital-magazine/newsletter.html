@@ -1,0 +1,102 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <!-- You can start by deleting this line. Then, you can delete the other comments as you read them. -->
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" href="https://use.typekit.net/pyc6ueb.css">   
+            <title>Sophia Huber</title> 
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+            
+        </head>	
+        <body>
+            <div class="container">
+                <header>
+                
+                    <h1 class="logo"> 
+                        <a href="index.html">
+                        <img src="Logo-2.svg" alt="Cool Logo"> 
+                        </a>
+                    </h1>
+                    
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Awards</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="photogallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="newsletter.html">Subscribe</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                </header>
+            </div>
+               <body>
+                <div class="container">
+                  <p class="description">
+                    Sign up for fresh finds, behind-the-scenes peeks, and charming dispatches from the world of Washi Works.
+                  </p>
+                  <form action="#" method="POST" class="subscription-form">
+                    <input type="first name" name="First Name" placeholder="Enter your first name" required class="name-input" />
+                    <input type="last name" name="Last Name" placeholder="Enter your last name" required class="name-input" />
+                    <input type="email" name="email" placeholder="Enter your email" required class="email-input" />
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                  </form>
+                </div>
+
+
+                <!-- Leaf -->
+<script>
+    const navItems = document.querySelectorAll('nav ul li');
+    const activeIntervals = new Map();
+  
+    function createLeafFromItem(item) {
+      const rect = item.getBoundingClientRect();
+      const leaf = document.createElement('div');
+      leaf.classList.add('leaf');
+      
+      // Random horizontal position below the entire width of the hovered nav item
+      const randomX = rect.left + Math.random() * rect.width;
+      // Position leaf just below the nav item (a few pixels down)
+      const posY = rect.bottom + 5;
+  
+      leaf.style.left = `${randomX}px`;
+      leaf.style.top = `${posY}px`;
+      leaf.style.setProperty('--drift', `${(Math.random() - 0.5) * 100}px`);
+      leaf.style.animationDuration = `${3 + Math.random()}s`;
+  
+      document.body.appendChild(leaf);
+      setTimeout(() => leaf.remove(), 5000);
+    }
+  
+    navItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        const intervalId = setInterval(() => createLeafFromItem(item), 333); // 3 leaves per second
+        activeIntervals.set(item, intervalId);
+      });
+  
+      item.addEventListener('mouseleave', () => {
+        clearInterval(activeIntervals.get(item));
+        activeIntervals.delete(item);
+      });
+    });
+  </script>
+  
+ <!-- Leaf -->
+        </body>
+    </html>
