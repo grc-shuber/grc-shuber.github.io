@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SF Giants Roster Comparison</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>SF Giants Roster Comparison</h1>
+
+  <!-- Section showing players on both rosters -->
+  <h2>Players on Both Rosters:</h2>
+  <p id="intersection">
+  </p>
+
+  <!-- Section showing players only on the 40-man roster -->
+  <h2>Players Unique to 40-Man Roster:</h2>
+  <p id="unique40man">
+  </p>
+
+  <!-- Section showing the total count of unique players -->
+  <h2>Total Unique Players:</h2>
+  <p id="uniqueCount">
+  </p>
+
+  <!-- Section showing active players sorted by last name descending -->
+  <h2>Active Players Sorted by Last Name (Descending):</h2>
+  <p id="sortedActive">
+  </p>
+
+  <!-- Section showing the 12th player in the sorted list -->
+  <h2>12th Player in Sorted List:</h2>
+  <p id="twelfthPlayer">
+  </p>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
